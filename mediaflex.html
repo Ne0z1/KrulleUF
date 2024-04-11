@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>
+                medieanpassad flex
+        </title>
+        <style>
+            main, article{
+                border: 1px solid black;
+                margin: 5px;
+                padding: 5px;
+                display: flex;
+                justify-content: center;
+            }
+
+            /* kod för porträtt-läge */
+            @media only screen and (orientation: portrait){
+                main{
+                    flex-direction: column;
+                }
+
+                article{
+                    background-color: lime;
+                }
+            }
+
+            @media only screen and (orientation: portrait){
+                main{
+                    flex-direction: row;
+                }
+
+                article{
+                    background-color: aqua;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <article>
+                Artikel 1
+            </article>
+            <article>
+                Artikel 2
+            </article>
+            <article>
+                Artikel 3
+            </article>
+        </main>
+    </body>
+</html>

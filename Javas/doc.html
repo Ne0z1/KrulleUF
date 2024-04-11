@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            JAVA
+        </title>
+        <style>
+            .rödBakgrund{
+                background-color: red;
+            }
+
+            .blåBakgrund{
+                background-color: blue;
+            }
+
+            #nySidfot{
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <header id="sidhuvud">
+            <h1 id="rubrik1">Min rubrik</h1>
+        </header>
+        <main>
+            <h2>Mitt huvudinnehåll</h2>
+            <button onclick="document.getElementById('sidhuvud').childNodes[1].innerText = 'Ny rubrik'">Childnodes</button>
+
+            <button onclick="document.getElementById('rubrik1').parentElement.innerText = 'nytt innehåll'">parentElement</button>
+
+            <button onclick="document.getElementById('rubrik1').classList.add('rödBakgrund')">classlist.add</button>
+
+            <button onclick="document.getElementById('rubrik1').classList.replace('rödBakgrund', 'blåBakgrund')">classlist.replace</button>
+            
+            <button onclick="document.getElementById('rubrik1').classList.toggle('blåBakgrund')">classlist.toggle</button>
+
+            <button onclick="document.getElementById('sidfot').id ='nySidfot'">Nytt id</button>
+        </main>
+        <footer id="sidfot">
+            <strong>sidfot</strong>
+        </footer>
+    </body>
+</html>

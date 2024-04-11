@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <title>Klass och ID</title>
+
+    <style>
+        p{
+            background-color: blue;
+            color: white;
+        }
+        /*Klass för röd bakgrund */
+        .rödBakgrund{
+            background-color: red;
+        }
+        /*ID för en svart ram*/
+        #svartram{
+            border: 2px solid black;
+        }
+    </style>
+    </head>
+    <body>
+        <p id="svartram">
+            <a href="https://www.gkc.se" target="_blank">Till gkc</a>
+        </p>
+        <p>
+            lite text
+        </p>
+        <p class="rödBakgrund">
+            lite text
+        </p>
+        <p id="svartram" class="rödBakgrund">
+            lite text
+        </p>
+    </body>
+</html>

@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
+}
+
+  /* Gör så att container id har en flexibel layout med två kolumner */
+#container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Gör så att bilden fyller hela högra kolumnen */
+#hero {
+  flex: 1;
+  height: 100%;
+}
+
+/* Gör så att texten är centrerad i den vänstra kolumnen */
+#container > div:first-child {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#container h4{
+  font-weight: 1000;
+  padding-bottom: 15px;
+  -webkit-text-stroke: 1px black;
+  color: cyan;
+}
+#container h2{
+  -webkit-text-stroke: 1.1px black;
+  color: cyan;
+}
+
+#container h1{
+  -webkit-text-stroke: 1.2px black;
+  color: cyan;
+}
+
+#container p{
+  -webkit-text-stroke: 0.8px black;
+  font-weight: 800;
+}
+
+#container button{
+  border-radius: 20px;
+  background-color:  rgb(0, 128, 255);
+  color: white;
+  font-weight: 800;
+  -webkit-text-stroke: 1px black;
+}
+
+/* Gör så att knappen ändrar färg när man hovrar över den */
+#container button:hover {
+  background-color: cyan;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background-color: rgb(0, 128, 255);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 1);
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+/* Gör så att knapparna blir centrerade */
+#navbar {
+  display: flex;
+  align-items: center;
+    justify-content:  center;
+}
+/* Gör så att det blir mellanrum mellan texterna */
+#navbar li{
+  list-style: none;
+  padding: 0 30px;
+}
+/* Fixar textens utseende */
+#navbar li a{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 800;
+  color: rgb(0, 0, 0);
+}
+/* När du hovrar över knapparna byter de färg, om du är inne på t.ex home kommer den att byta färg */
+#navbar li a:hover,
+#navbar li a.active {
+  color: cyan;
+}
+
+#navbar li a.active {
+  text-decoration: underline;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 64px;
+  color:black;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 1000;
+  line-height: 54px;
+}
+
+h4 {
+  font-size: 25px;
+  color: black;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+button {
+  font-size: 20px;
+  padding: 10px 20px;
+}
+
+p {
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+body {
+  background: radial-gradient(#fff, rgb(0, 128, 255));
+}
+
+#feature .feature-box{
+  width: 280px;
+  height: 280px;
+  text-align: center;
+  padding: 15px 15px ;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 1);
+  border: 1px solid #cce7d0;
+  border-radius: 10px;
+  margin: 20px 0px;
+}
+
+#feature .feature-box h6{
+  padding: 10px 8px 9px 18px;
+  line-height: 1;
+  border-radius: 4px;
+  color: white;
+  background-color:  rgb(0, 128, 255);
+}
+

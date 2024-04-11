@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krulle UF</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="text/javascript" src="java.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="Websida.html">
+            <img src="assetsss/Krullelogo.png" alt="Logo">
+            </a>
+        </div>
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+        
+            <ul class="menu__box">
+                <li><a class="menu__item" href="Websida.html">Hem</a></li>
+                <li><a class="menu__item" href="Om oss.html">Om oss</a></li>
+                <li><a class="menu__item" href="produkt.html">Produkt</a></li>
+                <li><a class="menu__item" href="Varukorg.html"><i class="fas fa-cart-shopping"></i></a></li>
+            </ul>
+          </div>
+          <nav>
+            <ul>
+                <li><a href="Websida.html">Hem</a></li>
+                <li><a href="Om oss.html">Om oss</a></li>
+                <li><a href="produkt.html">Produkt</a></li>
+                <li><a href="Varukorg.html"><i class="fas fa-cart-shopping"></i></a></li>
+            </ul>
+          </nav>
+    </header>
+    <div class="cart">
+        <div class="summary">
+            <h2>Beställning</h2>
+            <h3>Dina uppgifter:</h3>
+        <form>
+            <table>
+                <tr>
+                    <td>Namn:</td>
+                    <td><input style="width: 90%;" id="namn" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Postadress:</td>
+                    <td><input style="width: 90%;" id="postadress" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Postnummer:</td>
+                    <td><input style="width: 90%;" id="postnummer" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Postort:</td>
+                    <td><input style="width: 90%;" id="postort" type="text>"></td>
+                </tr>
+            </table>
+            <button type="reset">Töm formuläret</button>
+        </form>
+            <p id ="antal">Antal: 1</p>
+            <p id="price">35 kr</p>
+            <div class="quantity">
+              <button id="decrease" onclick="minskaVarukorg()">-</button>
+              <span id="räknare">1</span>
+              <button id="increase" onclick="ökaVarukorg()">+</button><br>
+              <button onclick="resetVarukorg()">Reset</button>
+            </div>
+            <a class="hire-btn" href="mailto:Krulleuf@hotmail.com"><span></span> Beställ </a>
+        <div class="item">
+          <img style="background-repeat: no-repeat;" src="assetsss/Krullebakgrundsbild1.png" alt="Item">
+        </div>
+    </div>
+      </div>
+</body>
+</html>

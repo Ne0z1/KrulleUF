@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Mediaanpassning
+        </title>
+        <style>
+            body{
+                background-color: yellow;
+                color: darkred;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            @media only screen and (min-width: 800px) and (min-height: 400px){
+                body{
+                    background-color: cyan;
+                }
+            }
+            @media print{
+                body{
+                    background-color: white;
+                    color: black;
+                    font-family: 'Times New Roman', Times, serif;
+                    font-size: large;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        TEXT
+    </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Position</title>
+    </head>
+    <body>
+        <script>
+            window.onload = init;
+            function init (){
+                navigator.geolocation.getCurrentPosition(showGeoPosition);
+            }
+
+            function showGeoPosition(data){
+            document.getElementById("myPosition").innerHTML = "Latitude: " + data.coords.latitude + "<br>Longitude: " + data.coords.longitude;
+        }
+        </script>
+    </body>
+</html>
